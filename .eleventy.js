@@ -3,13 +3,13 @@
 
 module.exports = function(eleventyConfig) {
 
-  eleventyConfig.addPassthroughCopy("image");
+  eleventyConfig.addPassthroughCopy("site/image");
   eleventyConfig.addPassthroughCopy("styles");
 
   return {
       dir: {
-          input: "site",  // ✅ Points Eleventy to the "site" folder
-          output: "_site" // ✅ Where Eleventy will generate the final files
+          input: "site",  
+          output: "_site" 
       }
   };
 };

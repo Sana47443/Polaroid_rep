@@ -6,7 +6,7 @@
     --accent-color: #FF3F3C;
 }
 
-body{
+body {
     background: var(--main-bg-color);
     color: var(--primary-text-color);
     font-family: 'Inter', sans-serif;
@@ -14,24 +14,126 @@ body{
     padding: 0;
 }
 
-header{
-    padding: 20px;
-    margin-bottom: 100px;
+h1 {
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: 501;
+    padding: 30px 0 100px 40px; 
 }
 
-header h1 {
-    margin:0;
-    font-weight: normal;
-}
-
-main{
-
-    background : url('/image/polaroid.png') no-repeat center 100px; 
+main {
+    background: url('/image/polaroid.png') no-repeat center 100px;
     margin: 0 auto;
     width: 1000px;
 }
 
-.hero{
+.hero {
     text-align: center;
     min-height: 800px;
+}
+
+.hero h2 {
+    font-size: 9em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.details {
+    text-align: center;
+    max-width: 875px;
+    margin: 0 auto 60px;
+} 
+
+.details p {
+    text-align: left;
+    margin: 0 auto;
+    line-height: 1.3;
+    max-width: 815px;
+    font-size: 1.4em;
+    padding-bottom: 15px;
+}
+
+.details h3,
+.cta h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.details ul {
+    text-align: left;
+    padding-top: 7px;
+    font-weight: lighter;
+}
+
+.details ul li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding-left: 65px;
+    font-size: 1.4em;
+    line-height: 35px;
+}
+
+
+.details ul li.wifi {
+    background: url(/image/wifi-solid.svg) no-repeat center left; 
+}
+
+.details ul li.cloud { 
+    background: url(/image/cloud-arrow-up-solid.svg) no-repeat center left; 
+}
+
+.details ul li.qr { 
+    background: url(/image/qrcode-solid.svg) no-repeat center left; 
+}
+
+.details ul li.film { 
+    background: url(/image/photo-film-solid.svg) no-repeat center left; 
+}
+
+.cta {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.cta form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+
+.cta input[type="button"] {
+    height: 60px;
+    font-size: 1.1em;
+    padding: 15px;
+    border: none;
+}
+
+.cta input[type="text"] {
+    flex: 1;
+    background: #ECECEC;
+    text-align: left;
+    font-size: 1.1em;
+    padding: 15px;
+    border: none;
+    height: 30px;
+}
+
+.cta input[type="button"] {
+    background: var(--accent-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta input[type="button"]:hover {
+    background: #d32f2f;
 }
