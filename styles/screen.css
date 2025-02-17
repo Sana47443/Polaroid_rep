@@ -25,7 +25,8 @@ header h1 {
 }
 
 main{
-    background : url('/images/polaroid.png') no-repeat center 100px; 
+
+    background : url('/image/polaroid.png') no-repeat center 100px; 
     margin: 0 auto;
     width: 1000px;
 }
